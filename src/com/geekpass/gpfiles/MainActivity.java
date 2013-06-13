@@ -32,6 +32,41 @@ public class MainActivity extends Activity {
         	SubTitle = "SubTitle Test 2";
         }});
         
+        items.add(new ListViewItem()
+        {{
+        	ThumbnailResource = R.drawable.ic_launcher;
+        	Title = "Item 2";
+        	SubTitle = "SubTitle Test 2";
+        }});
+        
+        items.add(new ListViewItem()
+        {{
+        	ThumbnailResource = R.drawable.ic_launcher;
+        	Title = "Item 2";
+        	SubTitle = "SubTitle Test 2";
+        }});
+        
+        items.add(new ListViewItem()
+        {{
+        	ThumbnailResource = R.drawable.ic_launcher;
+        	Title = "Item 2";
+        	SubTitle = "SubTitle Test 2";
+        }});
+        
+        items.add(new ListViewItem()
+        {{
+        	ThumbnailResource = R.drawable.ic_launcher;
+        	Title = "Item 2";
+        	SubTitle = "SubTitle Test 2";
+        }});
+        
+        items.add(new ListViewItem()
+        {{
+        	ThumbnailResource = R.drawable.ic_launcher;
+        	Title = "Item 2";
+        	SubTitle = "SubTitle Test 2";
+        }});
+        
         CustomListViewAdapter adapter = new CustomListViewAdapter(this, items);
         lv.setAdapter(adapter);
     }
