@@ -5,16 +5,13 @@
     android:layout_height="fill_parent"   
     xmlns:android="http://schemas.android.com/apk/res/android"  
     android:padding="5dip">  
-      
-    <ImageView   
-        android:layout_width="78dip"   
-        android:layout_height="78dip"   
-        android:id="@+id/imgThumbnail"   
-        android:layout_alignParentLeft="true"  
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="-3dip"
-        android:scaleType="centerInside">  
-    </ImageView>  
+    
+        <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text=""></CheckBox>  
       
     <TextView   
         android:textAppearance="?android:attr/textAppearanceLarge"   
@@ -38,13 +35,12 @@
         android:layout_marginLeft="6dip">  
     </TextView>
 
-    <CheckBox
-        android:id="@+id/checkBox1"
+    <ImageView
+        android:id="@+id/imgThumbnail"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/txtTitle"
-        android:text="" />
-    
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        android:scaleType="fitCenter"
+        android:layout_toRightOf="@+id/checkBox1"/>
 
 </RelativeLayout>

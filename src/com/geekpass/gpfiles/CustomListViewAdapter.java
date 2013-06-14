@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;  
 import android.view.ViewGroup;  
 import android.widget.BaseAdapter;  
+import android.widget.CheckBox;
 import android.widget.ImageView;  
 import android.widget.ListView;
 import android.widget.TextView;  
@@ -55,11 +56,12 @@ public class CustomListViewAdapter extends BaseAdapter
         
         if(convertView==null)
             vi = inflater.inflate(R.layout.item_row, null);
-            
+        CheckBox chkBox = (CheckBox) vi.findViewById(R.id.checkBox1); 
         ImageView imgThumbnail = (ImageView) vi.findViewById(R.id.imgThumbnail);
         TextView txtTitle = (TextView) vi.findViewById(R.id.txtTitle);
         TextView txtSubTitle = (TextView) vi.findViewById(R.id.txtSubTitle);
         
+        chkBox.setActivated(true);
         imgThumbnail.setImageResource(item.ThumbnailResource);
         txtTitle.setText(item.Title);
         txtSubTitle.setText(item.SubTitle);
